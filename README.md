@@ -21,3 +21,6 @@ Welcome to the Etch-A-Sketch game! This is a simple web-based drawing applicatio
 HTML
 CSS
 JavaScript.
+
+##Live Server
+https://riyaonweb.github.io/Etch-a-Sketch/
