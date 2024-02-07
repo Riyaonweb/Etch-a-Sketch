@@ -3,6 +3,7 @@ const value = document.getElementById("value");
 const black = document.getElementById("black");
 const pixel = document.getElementById("pixel");
 const colors = document.querySelectorAll(".color");
+const again = document.getElementById("again");
 function color(){
     const randomColor = '#'+Math.floor(Math.random()*16777215).toString(16).padStart(6,'0').toUpperCase();
     console.log(randomColor);
@@ -11,16 +12,19 @@ function color(){
 
 //16*16 grid
 function getValue(){
-    value.addEventListener("click",() => {
+    value.addEventListener("click", function clickHandler(e) {
         var input = prompt("Enter number");
         value.innerText = input+ "*" +input;
         console.log("input", input);
         defaultGrid(input);
-        return input;
-    })
+       
+        value.removeEventListener("click",clickHandler);
+    });
+   
 }
 
 getValue();
+
 
 function defaultGrid(inputValue){
 console.log("inputValue", inputValue);
@@ -66,7 +70,12 @@ function pixels(){
     });
     
 }
-
+function playAgain(){
+    again.addEventListener("click",() => {
+        location.reload(true);
+    })
+}
+playAgain()
 
 
 
