@@ -46,9 +46,13 @@ function chooseColor(){
         color.addEventListener("click",(e) => {
             if(e.target.innerHTML === "Pixel"){
                 pixels();
+                pixel.classList.add("bc");
+                black.classList.remove("bcc")
             }
         else if(e.target.innerHTML === "Black"){
             blacks();
+            pixel.classList.remove("bc");
+            black.classList.add("bcc")
         }
     })
 })

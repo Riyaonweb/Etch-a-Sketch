@@ -22,6 +22,11 @@ body{
     width: 700px;
     height: 500px;
 }
+#value:hover,#again:hover{
+    background-color: #fdbb2d;
+    color: red;
+    border: none;
+}
 .head{
     margin-top: 10px;
     display: flex;
@@ -33,9 +38,13 @@ body{
     font-family: "Orbitron", sans-serif;
 }
 button{
-    padding: 10px;
+    width: 100px;
+    padding: 8px;
     font-weight: 600;
     margin: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 .buttons{
     display: flex;
@@ -54,3 +63,13 @@ button{
     width: calc(100% / 16);
     height: calc(100% /16);
 } */
+#black.bcc{
+    color: white;
+    background-color: black;
+    border: none;
+}
+#pixel.bc{
+    color: white;
+    border: none;
+    background: linear-gradient(90deg, rgba(180,58,58,1) 0%,rgba(180,113,58,1)20%,rgba(58,180,62,1)40%,rgba(58,128,180,1)60%,rgba(127,58,180,1)80%,rgba(180,58,120,1)100%);
+}
